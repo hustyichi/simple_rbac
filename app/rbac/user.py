@@ -13,4 +13,4 @@ class User:
         self._role = role
 
     def can(self, permission):
-        return self._role.has(permission)
+        return self._role and self._role.has(permission)
